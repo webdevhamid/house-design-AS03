@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DaisyUI + Tailwind CDN  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font 'Manrope'  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>House Design AS03</title>
+    <style>
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {
+            colors: {
+              "my-custom-color": "rgb(12, 238, 238)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body class="manrope-font">
+    <header>
+      <nav></nav>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
