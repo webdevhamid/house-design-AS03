@@ -30,6 +30,7 @@
               "white-1": "rgba(255,255,255,1.00)",
               "white-2": "rgba(255,255,255,0.00)",
               "body-bg": "#f4f4f4",
+              "footer-bg": 'rgb(30, 30, 30)'
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -49,6 +50,7 @@
         <nav class="pt-4">
           <div class="navbar">
             <div class="navbar-start">
+                <!-- Nav logo  -->
               <a class="flex gap-2 items-center font-extrabold text-3xl">
                 <span class="bg-primary-color p-2 rounded-full">
                   <svg
@@ -174,7 +176,7 @@
         <!-- banner start -->
         <div id="home" class="py-20">
           <!-- Banner Image  -->
-          <div class="flex justify-center mt-10">
+          <div class="flex justify-center md:mt-10">
             <img src="assets/banner.png" alt="" />
           </div>
           <!-- Banner Content  -->
@@ -521,7 +523,7 @@
       <!-- Latest portfolio end -->
 
       <!-- Form section start  -->
-       <section class="py-10 md:py-20">
+       <section class="py-10 md:py-20 bg-[url('assets/bg.jpg')] bg-no-repeat bg-center w-full bg-cover">
 
             <!-- Let's discuss form badge -->
             <div class="text-center">
@@ -556,7 +558,7 @@
                         <input type="number" placeholder="Phone Number*" class="input  w-full rounded-full p-5" />
                         <input type="email" placeholder="Email Address*" class="input  w-full rounded-full p-5" />
                         <textarea class="w-full textarea md:col-span-2 p-5 rounded-3xl" rows="10" placeholder="Write your message here"></textarea>
-                        <a
+                        <button type="submit"
                         class="md:flex items-center gap-2 lg:text-lg cursor-pointer hover:opacity-90 font-extrabold bg-primary-color px-3 lg:px-5 lg:py-3 py-2 rounded-full justify-center hidden md:col-span-2"
                         >Send Mail
                         <span class="bg-black p-2 rounded-full">
@@ -576,25 +578,76 @@
                             />
                           </svg>
                         </span>
-                      </a>
+                    </button>
                     </div>
-                    <!-- <div class="flex">
-                        
-                    </div>
-
-                    <div>
-                       
-                    </div>
-                    <div>
-                        
-                    </div> -->
                 </form>
              </div>
-
        </section>
       <!-- Form section end -->
     </main>
 
-    <footer></footer>
+    <footer class="bg-footer-bg">
+        <div class="footer footer-center rounded p-10 text-white">
+           <div>
+             <!-- Footer top -->
+             <a class="flex gap-2 items-center font-extrabold text-3xl ">
+                <span class="bg-primary-color p-2 rounded-full">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                    color="#000"
+                >
+                    <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                </svg>
+                </span>
+                Rinterio
+            </a> 
+            <p class="text-[#737373] font-medium md:w-4/6 mt-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           </div>
+           <!-- Footer middle  -->
+            <div>
+                <ul class="flex gap-10 md:gap-24 lg:gap-28 md:flex-row flex-col text-[#E9E9E9]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+           <!-- Footer bottom  -->
+            <div>
+                <!-- Book consult button  -->
+              <a
+              class="flex items-center gap-2 lg:text-lg cursor-pointer hover:opacity-90 font-extrabold bg-primary-color px-3 lg:px-5 lg:py-3 py-2 rounded-full justify-between text-black"
+              >Book Consult
+              <span class="bg-black p-2 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  color="#fff"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </a>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
